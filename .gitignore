@@ -1,0 +1,16 @@
+# Environments
+env/
+venv/
+.venv/
+conda/
+*.sh
+
+# Data
+data/
+*.csv
+*.h5
+*.pkl
+*.pt
+
+# Mac
+.DS_Store
