@@ -1,9 +1,16 @@
-FROM python:3.8-slim-buster
+FROM python:3.9-slim
 
-RUN apt update -y && apt install awscli -y
 WORKDIR /app
 
-COPY . /app
-RUN pip install -r requirements.txt
+# Copy requirements first (for better caching)
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["python3", "app.py"]
+# Copy the rest of the application
+COPY . .
+
+# Expose the port Render expects
+EXPOSE 8080
+
+# Run the application
+CMD ["python", "app.py"]
