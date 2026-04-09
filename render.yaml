@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: kidney-disease-app
+    runtime: docker
+    repo: https://github.com/Priyanka04suri/Kidney-disease-mlops-project
+    branch: main
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerCommand: ""
+    envVars:
+      - key: PORT
+        value: "8080"
