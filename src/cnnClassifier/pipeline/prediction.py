@@ -8,8 +8,6 @@ import os
 class PredictionPipeline:
     def __init__(self,filename):
         self.filename =filename
-
-
     
     def predict(self):
         # load model
