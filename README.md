@@ -57,7 +57,6 @@ open up you local host and port
 
 - [Documentation](https://mlflow.org/docs/latest/index.html)
 
-- [MLflow tutorial](https://youtu.be/qdcHHrsXA48?si=bD5vDS60akNphkem)
 
 ##### cmd
 - mlflow ui
@@ -74,12 +73,11 @@ Run this to export as env variables:
 
 ```bash
 
-export MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/Kidney-Disease-Classification-MLflow-DVC.mlflow
+export MLFLOW_TRACKING_URI=https://dagshub.com/priyanka04suri/Kidney-disease-mlops-project.mlflow
 
-export MLFLOW_TRACKING_USERNAME=entbappy 
+export MLFLOW_TRACKING_USERNAME=priyanka04suri
 
-export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
-
+export MLFLOW_TRACKING_TOKEN=088497a5f73cf533e82e61bd5a6c071c192c0260
 ```
 
 

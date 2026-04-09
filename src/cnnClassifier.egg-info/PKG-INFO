@@ -35,12 +35,12 @@ Dynamic: summary
 Clone the repository
 
 ```bash
-https://github.com/krishnaik06/Kidney-Disease-Classification-Deep-Learning-Project
+https://github.com/Priyanka04suri/Kidney-disease-mlops-project
 ```
 ### STEP 01- Create a conda environment after opening the repository
 
 ```bash
-conda create -n cnncls python=3.8 -y
+conda create -n cnncls python=3.10 -y
 ```
 
 ```bash
@@ -89,12 +89,11 @@ Run this to export as env variables:
 
 ```bash
 
-export MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/Kidney-Disease-Classification-MLflow-DVC.mlflow
+export MLFLOW_TRACKING_URI=https://dagshub.com/priyanka04suri/Kidney-disease-mlops-project.mlflow
 
-export MLFLOW_TRACKING_USERNAME=entbappy 
+export MLFLOW_TRACKING_USERNAME=priyanka04suri
 
-export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
-
+export MLFLOW_TRACKING_TOKEN=088497a5f73cf533e82e61bd5a6c071c192c0260
 ```
 
 

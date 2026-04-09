@@ -69,3 +69,649 @@ x==========x]
 [2026-03-03 14:19:01,648: INFO: main: >>>>>> stage Training completed <<<<<<
 
 x==========x]
+[2026-04-08 11:15:43,736: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-04-08 11:15:43,737: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:15:43,738: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:15:43,738: INFO: common: created directory at: artifacts]
+[2026-04-08 11:15:43,738: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-04-08 11:15:43,738: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-08 11:16:15,622: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-08 11:16:15,883: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-04-08 11:16:15,883: INFO: main: *******************]
+[2026-04-08 11:16:15,883: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-04-08 11:16:15,885: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:16:15,885: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:16:15,885: INFO: common: created directory at: artifacts]
+[2026-04-08 11:16:15,885: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-04-08 11:16:16,252: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-04-08 11:16:16,315: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-08 11:16:16,316: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-08 11:16:16,374: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-04-08 11:16:16,374: INFO: main: *******************]
+[2026-04-08 11:16:16,374: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-04-08 11:16:16,375: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:16:16,376: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:16:16,376: INFO: common: created directory at: artifacts]
+[2026-04-08 11:16:16,376: INFO: common: created directory at: artifacts/training]
+[2026-04-08 11:16:53,260: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-04-08 11:16:53,260: INFO: main: *******************]
+[2026-04-08 11:16:53,260: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-04-08 11:16:53,261: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:16:53,262: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:16:53,262: INFO: common: created directory at: artifacts]
+[2026-04-08 11:17:05,206: INFO: common: json file saved at: scores.json]
+[2026-04-08 11:17:05,207: INFO: common: json file saved at: scores.json]
+[2026-04-08 11:17:05,207: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2026-04-08 11:32:59,493: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-04-08 11:32:59,494: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:32:59,495: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:32:59,495: INFO: common: created directory at: artifacts]
+[2026-04-08 11:32:59,495: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-04-08 11:32:59,495: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-08 11:33:19,645: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-08 11:33:19,960: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-04-08 11:33:19,960: INFO: main: *******************]
+[2026-04-08 11:33:19,960: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-04-08 11:33:19,961: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:33:19,962: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:33:19,962: INFO: common: created directory at: artifacts]
+[2026-04-08 11:33:19,962: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-04-08 11:33:20,261: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-04-08 11:33:20,376: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-08 11:33:20,378: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-08 11:33:20,472: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-04-08 11:33:20,472: INFO: main: *******************]
+[2026-04-08 11:33:20,472: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-04-08 11:33:20,473: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:33:20,473: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:33:20,474: INFO: common: created directory at: artifacts]
+[2026-04-08 11:33:20,474: INFO: common: created directory at: artifacts/training]
+[2026-04-08 11:33:57,266: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-04-08 11:33:57,267: INFO: main: *******************]
+[2026-04-08 11:33:57,267: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-04-08 11:33:57,268: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:33:57,269: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:33:57,269: INFO: common: created directory at: artifacts]
+[2026-04-08 11:34:09,369: INFO: common: json file saved at: scores.json]
+[2026-04-08 11:34:09,370: INFO: common: json file saved at: scores.json]
+[2026-04-08 11:34:09,370: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2026-04-08 11:42:26,890: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-04-08 11:42:26,891: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:42:26,892: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:42:26,892: INFO: common: created directory at: artifacts]
+[2026-04-08 11:42:26,892: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-04-08 11:42:26,892: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-08 11:42:40,174: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-08 11:42:40,473: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-04-08 11:42:40,473: INFO: main: *******************]
+[2026-04-08 11:42:40,473: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-04-08 11:42:40,474: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:42:40,475: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:42:40,475: INFO: common: created directory at: artifacts]
+[2026-04-08 11:42:40,475: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-04-08 11:42:40,771: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-04-08 11:42:40,877: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-08 11:42:40,878: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-08 11:42:41,004: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-04-08 11:42:41,004: INFO: main: *******************]
+[2026-04-08 11:42:41,004: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-04-08 11:42:41,005: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:42:41,005: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:42:41,005: INFO: common: created directory at: artifacts]
+[2026-04-08 11:42:41,005: INFO: common: created directory at: artifacts/training]
+[2026-04-08 11:43:26,929: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-04-08 11:43:26,930: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:43:26,931: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:43:26,931: INFO: common: created directory at: artifacts]
+[2026-04-08 11:43:26,931: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-04-08 11:43:26,931: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-08 11:43:35,971: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-08 11:43:36,203: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-04-08 11:43:36,203: INFO: main: *******************]
+[2026-04-08 11:43:36,203: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-04-08 11:43:36,204: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:43:36,205: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:43:36,205: INFO: common: created directory at: artifacts]
+[2026-04-08 11:43:36,205: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-04-08 11:43:36,494: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-04-08 11:43:36,634: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-08 11:43:36,635: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-08 11:43:36,711: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-04-08 11:43:36,712: INFO: main: *******************]
+[2026-04-08 11:43:36,712: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-04-08 11:43:36,713: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:43:36,713: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:43:36,714: INFO: common: created directory at: artifacts]
+[2026-04-08 11:43:36,714: INFO: common: created directory at: artifacts/training]
+[2026-04-08 11:44:15,785: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-04-08 11:44:15,788: INFO: main: *******************]
+[2026-04-08 11:44:15,788: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-04-08 11:44:15,791: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:44:15,795: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:44:15,795: INFO: common: created directory at: artifacts]
+[2026-04-08 11:44:28,861: INFO: common: json file saved at: scores.json]
+[2026-04-08 11:44:28,862: INFO: common: json file saved at: scores.json]
+[2026-04-08 11:44:28,863: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2026-04-08 11:47:20,274: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-04-08 11:47:20,275: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:47:20,276: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:47:20,276: INFO: common: created directory at: artifacts]
+[2026-04-08 11:47:20,276: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-04-08 11:47:20,276: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-08 11:47:29,467: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-08 11:47:29,752: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-04-08 11:47:29,752: INFO: main: *******************]
+[2026-04-08 11:47:29,752: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-04-08 11:47:29,753: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:47:29,753: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:47:29,754: INFO: common: created directory at: artifacts]
+[2026-04-08 11:47:29,754: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-04-08 11:47:30,070: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-04-08 11:47:30,246: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-08 11:47:30,247: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-08 11:47:30,377: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-04-08 11:47:30,377: INFO: main: *******************]
+[2026-04-08 11:47:30,377: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-04-08 11:47:30,378: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:47:30,379: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:47:30,379: INFO: common: created directory at: artifacts]
+[2026-04-08 11:47:30,379: INFO: common: created directory at: artifacts/training]
+[2026-04-08 11:48:09,999: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-04-08 11:48:10,000: INFO: main: *******************]
+[2026-04-08 11:48:10,000: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-04-08 11:48:10,001: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:48:10,002: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:48:10,002: INFO: common: created directory at: artifacts]
+[2026-04-08 11:48:23,349: INFO: common: json file saved at: scores.json]
+[2026-04-08 11:48:23,350: INFO: common: json file saved at: scores.json]
+[2026-04-08 11:48:23,350: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2026-04-08 11:52:58,518: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-04-08 11:52:58,519: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:52:58,519: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:52:58,519: INFO: common: created directory at: artifacts]
+[2026-04-08 11:52:58,519: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-04-08 11:52:58,519: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-08 11:53:08,747: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-08 11:53:09,092: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-04-08 11:53:09,093: INFO: main: *******************]
+[2026-04-08 11:53:09,093: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-04-08 11:53:09,094: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:53:09,095: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:53:09,095: INFO: common: created directory at: artifacts]
+[2026-04-08 11:53:09,095: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-04-08 11:53:09,371: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-04-08 11:53:09,629: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-08 11:53:09,630: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-08 11:53:09,766: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-04-08 11:53:09,766: INFO: main: *******************]
+[2026-04-08 11:53:09,766: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-04-08 11:53:09,767: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:53:09,767: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:53:09,767: INFO: common: created directory at: artifacts]
+[2026-04-08 11:53:09,768: INFO: common: created directory at: artifacts/training]
+[2026-04-08 11:57:24,424: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-04-08 11:57:24,425: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:57:24,425: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:57:24,425: INFO: common: created directory at: artifacts]
+[2026-04-08 11:57:24,425: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-04-08 11:57:24,426: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-08 11:57:31,682: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-08 11:57:32,051: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-04-08 11:57:32,051: INFO: main: *******************]
+[2026-04-08 11:57:32,051: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-04-08 11:57:32,052: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:57:32,052: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:57:32,053: INFO: common: created directory at: artifacts]
+[2026-04-08 11:57:32,053: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-04-08 11:57:32,323: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-04-08 11:57:32,563: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-08 11:57:32,564: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-08 11:57:32,803: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-04-08 11:57:32,803: INFO: main: *******************]
+[2026-04-08 11:57:32,803: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-04-08 11:57:32,804: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:57:32,804: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:57:32,804: INFO: common: created directory at: artifacts]
+[2026-04-08 11:57:32,805: INFO: common: created directory at: artifacts/training]
+[2026-04-08 11:58:10,248: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-04-08 11:58:10,249: INFO: main: *******************]
+[2026-04-08 11:58:10,249: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-04-08 11:58:10,251: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-08 11:58:10,252: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-08 11:58:10,252: INFO: common: created directory at: artifacts]
+[2026-04-08 11:58:22,151: INFO: common: json file saved at: scores.json]
+[2026-04-08 11:58:27,867: INFO: builder_impl: Assets written to: /var/folders/rr/ljd0ddw54pl3pqhhlymc5lkr0000gn/T/tmp3vrfu96n/model/data/model/assets]
+[2026-04-08 11:58:28,300: ERROR: main: module 'tensorflow.keras' has no attribute '__version__']
+Traceback (most recent call last):
+  File "/Users/priyankasuri/Desktop/Deep-Learning-Projects/Kidney-disease-mlops-project/main.py", line 59, in <module>
+    model_evalution.main()
+  File "/Users/priyankasuri/Desktop/Deep-Learning-Projects/Kidney-disease-mlops-project/src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 18, in main
+    evaluation.evaluation()
+  File "/Users/priyankasuri/Desktop/Deep-Learning-Projects/Kidney-disease-mlops-project/src/cnnClassifier/components/model_evaluation_mlflow.py", line 50, in evaluation
+    self.log_into_mlflow()   # ✅ ADD THIS LINE
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/priyankasuri/Desktop/Deep-Learning-Projects/Kidney-disease-mlops-project/src/cnnClassifier/components/model_evaluation_mlflow.py", line 73, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model", registered_model_name="VGG16Model")
+  File "/opt/homebrew/lib/python3.11/site-packages/mlflow/tensorflow/__init__.py", line 222, in log_model
+    return Model.log(
+           ^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/mlflow/models/model.py", line 551, in log
+    flavor.save_model(path=local_path, mlflow_model=mlflow_model, **kwargs)
+  File "/opt/homebrew/lib/python3.11/site-packages/mlflow/tensorflow/__init__.py", line 445, in save_model
+    "keras_version": keras_module.__version__,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'tensorflow.keras' has no attribute '__version__'
+[2026-04-09 11:19:42,427: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-04-09 11:19:42,428: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 11:19:42,429: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 11:19:42,429: INFO: common: created directory at: artifacts]
+[2026-04-09 11:19:42,429: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-04-09 11:19:42,429: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-09 11:19:52,635: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-09 11:19:53,018: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-04-09 11:19:53,018: INFO: main: *******************]
+[2026-04-09 11:19:53,018: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-04-09 11:19:53,019: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 11:19:53,020: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 11:19:53,020: INFO: common: created directory at: artifacts]
+[2026-04-09 11:19:53,020: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-04-09 11:19:53,292: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-04-09 11:19:53,472: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-09 11:19:53,474: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-09 11:19:53,603: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-04-09 11:19:53,603: INFO: main: *******************]
+[2026-04-09 11:19:53,603: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-04-09 11:19:53,604: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 11:19:53,604: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 11:19:53,604: INFO: common: created directory at: artifacts]
+[2026-04-09 11:19:53,604: INFO: common: created directory at: artifacts/training]
+[2026-04-09 11:20:32,941: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-04-09 11:20:32,942: INFO: main: *******************]
+[2026-04-09 11:20:32,942: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-04-09 11:20:32,944: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 11:20:32,945: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 11:20:32,946: INFO: common: created directory at: artifacts]
+[2026-04-09 11:20:45,272: INFO: common: json file saved at: scores.json]
+[2026-04-09 11:20:45,272: INFO: common: json file saved at: scores.json]
+[2026-04-09 11:20:45,272: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2026-04-09 11:21:53,940: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-04-09 11:21:53,941: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 11:21:53,941: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 11:21:53,941: INFO: common: created directory at: artifacts]
+[2026-04-09 11:21:53,941: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-04-09 11:21:53,941: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-09 11:22:02,990: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-09 11:22:03,390: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-04-09 11:22:03,390: INFO: main: *******************]
+[2026-04-09 11:22:03,390: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-04-09 11:22:03,391: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 11:22:03,392: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 11:22:03,392: INFO: common: created directory at: artifacts]
+[2026-04-09 11:22:03,392: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-04-09 11:22:03,642: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-04-09 11:22:03,762: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-09 11:22:03,763: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-09 11:22:04,028: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-04-09 11:22:04,028: INFO: main: *******************]
+[2026-04-09 11:22:04,028: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-04-09 11:22:04,029: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 11:22:04,029: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 11:22:04,029: INFO: common: created directory at: artifacts]
+[2026-04-09 11:22:04,029: INFO: common: created directory at: artifacts/training]
+[2026-04-09 11:22:41,732: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-04-09 11:22:41,734: INFO: main: *******************]
+[2026-04-09 11:22:41,734: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-04-09 11:22:41,735: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 11:22:41,736: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 11:22:41,736: INFO: common: created directory at: artifacts]
+[2026-04-09 11:22:53,848: INFO: common: json file saved at: scores.json]
+[2026-04-09 11:22:56,746: INFO: builder_impl: Assets written to: /var/folders/rr/ljd0ddw54pl3pqhhlymc5lkr0000gn/T/tmp6bghfm8y/model/data/model/assets]
+[2026-04-09 11:22:57,140: ERROR: main: module 'tensorflow.keras' has no attribute '__version__']
+Traceback (most recent call last):
+  File "/Users/priyankasuri/Desktop/Deep-Learning-Projects/Kidney-disease-mlops-project/main.py", line 59, in <module>
+    model_evalution.main()
+  File "/Users/priyankasuri/Desktop/Deep-Learning-Projects/Kidney-disease-mlops-project/src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 18, in main
+    evaluation.evaluation()
+  File "/Users/priyankasuri/Desktop/Deep-Learning-Projects/Kidney-disease-mlops-project/src/cnnClassifier/components/model_evaluation_mlflow.py", line 50, in evaluation
+    self.log_into_mlflow()   # ✅ ADD THIS LINE
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/priyankasuri/Desktop/Deep-Learning-Projects/Kidney-disease-mlops-project/src/cnnClassifier/components/model_evaluation_mlflow.py", line 73, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model", registered_model_name="VGG16Model")
+  File "/opt/homebrew/lib/python3.11/site-packages/mlflow/tensorflow/__init__.py", line 222, in log_model
+    return Model.log(
+           ^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/mlflow/models/model.py", line 551, in log
+    flavor.save_model(path=local_path, mlflow_model=mlflow_model, **kwargs)
+  File "/opt/homebrew/lib/python3.11/site-packages/mlflow/tensorflow/__init__.py", line 445, in save_model
+    "keras_version": keras_module.__version__,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'tensorflow.keras' has no attribute '__version__'
+[2026-04-09 12:19:32,882: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-04-09 12:19:32,883: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 12:19:32,884: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 12:19:32,884: INFO: common: created directory at: artifacts]
+[2026-04-09 12:19:32,884: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-04-09 12:19:32,884: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-09 12:19:40,766: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-09 12:19:41,446: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-04-09 12:19:41,446: INFO: main: *******************]
+[2026-04-09 12:19:41,446: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-04-09 12:19:41,447: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 12:19:41,447: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 12:19:41,448: INFO: common: created directory at: artifacts]
+[2026-04-09 12:19:41,448: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-04-09 12:19:41,694: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-04-09 12:19:41,891: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-09 12:19:41,892: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-09 12:19:42,009: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-04-09 12:19:42,010: INFO: main: *******************]
+[2026-04-09 12:19:42,010: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-04-09 12:19:42,011: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 12:19:42,011: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 12:19:42,011: INFO: common: created directory at: artifacts]
+[2026-04-09 12:19:42,011: INFO: common: created directory at: artifacts/training]
+[2026-04-09 12:20:19,056: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-04-09 12:20:19,058: INFO: main: *******************]
+[2026-04-09 12:20:19,058: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-04-09 12:20:19,059: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 12:20:19,060: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 12:20:19,060: INFO: common: created directory at: artifacts]
+[2026-04-09 12:20:30,816: INFO: common: json file saved at: scores.json]
+[2026-04-09 12:20:30,816: INFO: common: json file saved at: scores.json]
+[2026-04-09 12:20:30,816: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2026-04-09 12:24:48,276: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-04-09 12:24:48,277: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 12:24:48,278: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 12:24:48,278: INFO: common: created directory at: artifacts]
+[2026-04-09 12:24:48,278: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-04-09 12:24:48,278: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-09 12:24:57,209: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-09 12:24:57,839: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-04-09 12:24:57,840: INFO: main: *******************]
+[2026-04-09 12:24:57,840: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-04-09 12:24:57,840: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 12:24:57,841: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 12:24:57,841: INFO: common: created directory at: artifacts]
+[2026-04-09 12:24:57,841: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-04-09 12:24:58,122: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-04-09 12:24:58,499: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-09 12:24:58,500: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-09 12:24:58,610: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-04-09 12:24:58,610: INFO: main: *******************]
+[2026-04-09 12:24:58,610: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-04-09 12:24:58,611: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 12:24:58,611: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 12:24:58,611: INFO: common: created directory at: artifacts]
+[2026-04-09 12:24:58,611: INFO: common: created directory at: artifacts/training]
+[2026-04-09 12:25:39,356: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-04-09 12:25:39,359: INFO: main: *******************]
+[2026-04-09 12:25:39,359: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-04-09 12:25:39,360: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 12:25:39,361: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 12:25:39,361: INFO: common: created directory at: artifacts]
+[2026-04-09 12:25:53,278: INFO: common: json file saved at: scores.json]
+[2026-04-09 12:25:57,720: INFO: builder_impl: Assets written to: /var/folders/rr/ljd0ddw54pl3pqhhlymc5lkr0000gn/T/tmpxv4tabg1/model/data/model/assets]
+[2026-04-09 12:25:58,122: ERROR: main: module 'tensorflow.keras' has no attribute '__version__']
+Traceback (most recent call last):
+  File "/Users/priyankasuri/Desktop/Deep-Learning-Projects/Kidney-disease-mlops-project/main.py", line 59, in <module>
+    model_evalution.main()
+  File "/Users/priyankasuri/Desktop/Deep-Learning-Projects/Kidney-disease-mlops-project/src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 18, in main
+    evaluation.evaluation()
+  File "/Users/priyankasuri/Desktop/Deep-Learning-Projects/Kidney-disease-mlops-project/src/cnnClassifier/components/model_evaluation_mlflow.py", line 50, in evaluation
+    self.log_into_mlflow()   # ✅ ADD THIS LINE
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/priyankasuri/Desktop/Deep-Learning-Projects/Kidney-disease-mlops-project/src/cnnClassifier/components/model_evaluation_mlflow.py", line 73, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model", registered_model_name="VGG16Model")
+  File "/opt/homebrew/lib/python3.11/site-packages/mlflow/tensorflow/__init__.py", line 222, in log_model
+    return Model.log(
+           ^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/mlflow/models/model.py", line 551, in log
+    flavor.save_model(path=local_path, mlflow_model=mlflow_model, **kwargs)
+  File "/opt/homebrew/lib/python3.11/site-packages/mlflow/tensorflow/__init__.py", line 445, in save_model
+    "keras_version": keras_module.__version__,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'tensorflow.keras' has no attribute '__version__'
+[2026-04-09 20:22:20,684: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-04-09 20:22:20,685: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 20:22:20,686: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 20:22:20,686: INFO: common: created directory at: artifacts]
+[2026-04-09 20:22:20,686: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-04-09 20:22:20,686: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-09 20:22:42,285: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-09 20:22:42,727: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-04-09 20:22:42,727: INFO: main: *******************]
+[2026-04-09 20:22:42,727: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-04-09 20:22:42,728: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 20:22:42,729: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 20:22:42,729: INFO: common: created directory at: artifacts]
+[2026-04-09 20:22:42,729: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-04-09 20:22:43,017: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-04-09 20:22:43,322: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-09 20:22:43,323: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-09 20:22:43,618: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-04-09 20:22:43,619: INFO: main: *******************]
+[2026-04-09 20:22:43,619: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-04-09 20:22:43,620: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 20:22:43,621: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 20:22:43,621: INFO: common: created directory at: artifacts]
+[2026-04-09 20:22:43,621: INFO: common: created directory at: artifacts/training]
+[2026-04-09 20:23:27,660: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-04-09 20:23:27,662: INFO: main: *******************]
+[2026-04-09 20:23:27,662: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-04-09 20:23:27,663: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 20:23:27,665: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 20:23:27,665: INFO: common: created directory at: artifacts]
+[2026-04-09 20:23:43,314: INFO: common: json file saved at: scores.json]
+[2026-04-09 20:23:50,198: INFO: builder_impl: Assets written to: /var/folders/rr/ljd0ddw54pl3pqhhlymc5lkr0000gn/T/tmp1ymuerd3/model/data/model/assets]
+[2026-04-09 20:23:50,781: ERROR: main: module 'tensorflow.keras' has no attribute '__version__']
+Traceback (most recent call last):
+  File "/Users/priyankasuri/Desktop/Deep-Learning-Projects/Kidney-disease-mlops-project/main.py", line 59, in <module>
+    model_evalution.main()
+  File "/Users/priyankasuri/Desktop/Deep-Learning-Projects/Kidney-disease-mlops-project/src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 18, in main
+    evaluation.evaluation()
+  File "/Users/priyankasuri/Desktop/Deep-Learning-Projects/Kidney-disease-mlops-project/src/cnnClassifier/components/model_evaluation_mlflow.py", line 50, in evaluation
+    self.log_into_mlflow()   # ✅ ADD THIS LINE
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/priyankasuri/Desktop/Deep-Learning-Projects/Kidney-disease-mlops-project/src/cnnClassifier/components/model_evaluation_mlflow.py", line 73, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model", registered_model_name="VGG16Model")
+  File "/opt/homebrew/lib/python3.11/site-packages/mlflow/tensorflow/__init__.py", line 222, in log_model
+    return Model.log(
+           ^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/mlflow/models/model.py", line 551, in log
+    flavor.save_model(path=local_path, mlflow_model=mlflow_model, **kwargs)
+  File "/opt/homebrew/lib/python3.11/site-packages/mlflow/tensorflow/__init__.py", line 445, in save_model
+    "keras_version": keras_module.__version__,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'tensorflow.keras' has no attribute '__version__'
+[2026-04-09 21:08:40,555: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-04-09 21:08:40,556: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 21:08:40,559: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 21:08:40,559: INFO: common: created directory at: artifacts]
+[2026-04-09 21:08:40,559: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-04-09 21:08:40,559: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-09 21:08:58,882: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-09 21:08:59,270: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-04-09 21:08:59,270: INFO: main: *******************]
+[2026-04-09 21:08:59,270: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-04-09 21:08:59,271: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 21:08:59,271: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 21:08:59,271: INFO: common: created directory at: artifacts]
+[2026-04-09 21:08:59,271: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-04-09 21:08:59,515: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-04-09 21:08:59,716: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-09 21:08:59,717: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-09 21:08:59,962: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-04-09 21:08:59,962: INFO: main: *******************]
+[2026-04-09 21:08:59,962: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-04-09 21:08:59,962: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 21:08:59,963: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 21:08:59,963: INFO: common: created directory at: artifacts]
+[2026-04-09 21:08:59,963: INFO: common: created directory at: artifacts/training]
+[2026-04-09 21:13:01,421: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-04-09 21:13:01,423: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 21:13:01,423: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 21:13:01,423: INFO: common: created directory at: artifacts]
+[2026-04-09 21:13:01,423: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-04-09 21:13:01,423: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-09 21:13:20,473: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-09 21:13:20,832: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-04-09 21:13:20,832: INFO: main: *******************]
+[2026-04-09 21:13:20,832: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-04-09 21:13:20,833: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 21:13:20,834: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 21:13:20,834: INFO: common: created directory at: artifacts]
+[2026-04-09 21:13:20,834: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-04-09 21:13:21,078: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-04-09 21:13:21,243: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-09 21:13:21,245: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-09 21:13:21,672: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-04-09 21:13:21,673: INFO: main: *******************]
+[2026-04-09 21:13:21,673: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-04-09 21:13:21,674: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 21:13:21,674: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 21:13:21,674: INFO: common: created directory at: artifacts]
+[2026-04-09 21:13:21,674: INFO: common: created directory at: artifacts/training]
+[2026-04-09 21:13:58,231: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-04-09 21:13:58,232: INFO: main: *******************]
+[2026-04-09 21:13:58,232: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-04-09 21:13:58,233: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 21:13:58,234: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 21:13:58,234: INFO: common: created directory at: artifacts]
+[2026-04-09 21:14:10,205: INFO: common: json file saved at: scores.json]
+[2026-04-09 21:14:13,542: INFO: builder_impl: Assets written to: /var/folders/rr/ljd0ddw54pl3pqhhlymc5lkr0000gn/T/tmp1t3zt0bq/model/data/model/assets]
+[2026-04-09 21:14:52,456: INFO: common: json file saved at: scores.json]
+[2026-04-09 21:14:52,457: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2026-04-09 23:05:25,452: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-04-09 23:05:25,453: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 23:05:25,454: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 23:05:25,454: INFO: common: created directory at: artifacts]
+[2026-04-09 23:05:25,454: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-04-09 23:05:25,454: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-09 23:05:44,535: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-04-09 23:05:44,923: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-04-09 23:05:49,202: INFO: stage_02_prepare_base_model: *******************]
+[2026-04-09 23:05:49,202: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2026-04-09 23:05:49,203: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 23:05:49,204: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 23:05:49,204: INFO: common: created directory at: artifacts]
+[2026-04-09 23:05:49,204: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-04-09 23:05:49,427: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-04-09 23:05:49,687: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-09 23:05:49,688: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2026-04-09 23:05:49,867: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-04-09 23:05:52,602: INFO: stage_03_model_training: *******************]
+[2026-04-09 23:05:52,602: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2026-04-09 23:05:52,603: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 23:05:52,603: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 23:05:52,604: INFO: common: created directory at: artifacts]
+[2026-04-09 23:05:52,604: INFO: common: created directory at: artifacts/training]
+[2026-04-09 23:07:13,856: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-04-09 23:07:18,235: INFO: stage_04_model_evaluation: *******************]
+[2026-04-09 23:07:18,235: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-04-09 23:07:18,236: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-04-09 23:07:18,237: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-09 23:07:18,237: INFO: common: created directory at: artifacts]
+[2026-04-09 23:07:31,990: INFO: common: json file saved at: scores.json]
+[2026-04-09 23:07:35,392: INFO: builder_impl: Assets written to: /var/folders/rr/ljd0ddw54pl3pqhhlymc5lkr0000gn/T/tmpoaum97ag/model/data/model/assets]
+[2026-04-09 23:08:10,005: INFO: common: json file saved at: scores.json]
+[2026-04-09 23:08:10,006: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]

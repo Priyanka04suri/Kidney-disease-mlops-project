@@ -1,3 +1,10 @@
+import mlflow
+
+mlflow.set_tracking_uri("https://dagshub.com/priyanka04suri/Kidney-disease-mlops-project.mlflow")
+
+print(mlflow.get_tracking_uri())
+
+
 from cnnClassifier import logger
 from cnnClassifier.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from cnnClassifier.pipeline.stage_02_prepare_base_model import PrepareBaseModelTrainingPipeline
@@ -43,7 +50,6 @@ except Exception as e:
         raise e
 
 
-"""
 
 STAGE_NAME = "Evaluation stage"
 try:
@@ -55,5 +61,4 @@ try:
 
 except Exception as e:
         logger.exception(e)
-        raise e
-"""
+        raise e 
