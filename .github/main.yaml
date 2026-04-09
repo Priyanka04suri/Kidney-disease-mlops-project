@@ -8,91 +8,121 @@ on:
       - 'README.md'
 
 permissions:
-  id-token: write
   contents: read
 
+env:
+  IMAGE_NAME: my-app
+  IMAGE_TAG: latest
+
 jobs:
+
+  # -------------------------------
+  # 1. Continuous Integration
+  # -------------------------------
   integration:
     name: Continuous Integration
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Lint code
-        run: echo "Linting repository"
+      - name: Set up Python (if ML project)
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
 
-      - name: Run unit tests
-        run: echo "Running unit tests"
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
 
-  build-and-push-ecr-image:
-    name: Continuous Delivery
+      - name: Lint Code
+        run: |
+          echo "Linting..."
+          # Example:
+          # pip install flake8
+          # flake8 .
+
+      - name: Run Unit Tests
+        run: |
+          echo "Running tests..."
+          # pytest
+
+  # -------------------------------
+  # 2. Build Stage (Docker)
+  # -------------------------------
+  build:
+    name: Build Docker Image
     needs: integration
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Install Utilities
+      - name: Build Docker Image
         run: |
-          sudo apt-get update
-          sudo apt-get install -y jq unzip
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
+          docker build -t $IMAGE_NAME:$IMAGE_TAG .
+
+      - name: Save Docker Image (Artifact)
+        run: |
+          docker save $IMAGE_NAME:$IMAGE_TAG > image.tar
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_REGION }}
+          name: docker-image
+          path: image.tar
 
-      - name: Login to Amazon ECR
-        id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v1
+  # -------------------------------
+  # 3. Security Scan (Optional but Pro)
+  # -------------------------------
+  security-scan:
+    name: Security Scan
+    needs: build
+    runs-on: ubuntu-latest
 
-      - name: Build, tag, and push image to Amazon ECR
-        id: build-image
-        env:
-          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY_NAME }}
-          IMAGE_TAG: latest
-        run: |
-          # Build a docker container and
-          # push it to ECR so that it can
-          # be deployed to ECS.
-          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-          echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
-          
-          
-  Continuous-Deployment:
-    needs: build-and-push-ecr-image
-    runs-on: self-hosted
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
+      - name: Download Image Artifact
+        uses: actions/download-artifact@v3
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_REGION }}
+          name: docker-image
 
-      - name: Login to Amazon ECR
-        id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v1
-      
-      
-      - name: Pull latest images
+      - name: Load Docker Image
         run: |
-         docker pull ${{secrets.AWS_ECR_LOGIN_URI}}/${{ secrets.ECR_REPOSITORY_NAME }}:latest
-         
-      # - name: Stop and remove container if running
-      #   run: |
-      #    docker ps -q --filter "name=cnncls" | grep -q . && docker stop cnncls && docker rm -fv cnncls
-       
-      - name: Run Docker Image to serve users
+          docker load < image.tar
+
+      - name: Scan Image (Basic)
         run: |
-         docker run -d -p 8080:8080 --name=cnncls -e 'AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }}' -e 'AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}' -e 'AWS_REGION=${{ secrets.AWS_REGION }}'  ${{secrets.AWS_ECR_LOGIN_URI}}/${{ secrets.ECR_REPOSITORY_NAME }}:latest
-      - name: Clean previous images and containers
+          echo "Scanning Docker image for vulnerabilities..."
+          # You can integrate Trivy here:
+          # sudo apt install trivy
+          # trivy image $IMAGE_NAME:$IMAGE_TAG
+
+  # -------------------------------
+  # 4. Continuous Deployment (Render)
+  # -------------------------------
+  deploy:
+    name: Deploy to Render
+    needs: security-scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Render Deployment
         run: |
-         docker system prune -f 
+          curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+
+  # -------------------------------
+  # 5. Post Deployment Check
+  # -------------------------------
+  post-deploy:
+    name: Health Check
+    needs: deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check Application Health
+        run: |
+          echo "Checking if app is live..."
+          # Replace with your Render URL
+          curl -f https://your-app.onrender.com || exit 1
