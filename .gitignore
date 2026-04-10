@@ -8,7 +8,7 @@ conda/
 # Data
 data/
 *.csv
-*.h5
+artifacts/training/model.h5
 *.pkl
 *.pt
 
