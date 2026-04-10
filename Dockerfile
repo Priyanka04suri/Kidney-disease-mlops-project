@@ -1,5 +1,6 @@
-FROM python:3.8-slim-buster
+FROM python:3.9-slim-buster
 
+RUN apt update -y && apt install awscli -y
 WORKDIR /app
 
 COPY requirements.txt .
@@ -9,4 +10,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["python", "app.py"]
+CMD ["python3", "app.py"]
