@@ -9,23 +9,17 @@ class PredictionPipeline:
         self.filename = filename
     
     def predict(self):
-        # Get the directory where THIS FILE (prediction.py) is located
-        # This gives: /path/to/KIDNEY-DISEASE-MLOPS-PROJECT/src/cnnClassifier/pipeline/
-        current_dir = Path(__file__).resolve().parent
+        # Hardcoded path for your project structure
+        model_path = "KIDNEY-DISEASE-MLOPS-PROJECT/model/model.h5"
         
-        # Go up 3 levels to reach project root
-        # pipeline -> cnnClassifier -> src -> project_root
-        project_root = current_dir.parent.parent.parent
+        # Alternative: If you're already in the project directory
+        # model_path = "model/model.h5"
         
-        # Build path to model file
-        model_path = project_root / "model" / "model.h5"
-        
-        # Debug: Print the path to verify
         print(f"Loading model from: {model_path}")
-        print(f"File exists: {model_path.exists()}")
+        print(f"File exists: {os.path.exists(model_path)}")
         
         # Load model
-        model = load_model(str(model_path))
+        model = load_model(model_path)
 
         imagename = self.filename
         test_image = image.load_img(imagename, target_size=(224, 224))
